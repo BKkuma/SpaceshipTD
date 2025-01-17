@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rg2d.velocity = Vector2.right * speedbullet;
+        rg2d.velocity = transform.right * speedbullet;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
