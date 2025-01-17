@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rg2d: {fileID: 0}
-  speedbullet: 5
+  speedbullet: 10
