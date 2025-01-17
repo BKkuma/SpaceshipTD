@@ -5,6 +5,8 @@ using UnityEngine;
 public class AimAttack : MonoBehaviour
 {
     public GameObject aim;
+    public GameObject bullet;
+    public GameObject firepos;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +21,10 @@ public class AimAttack : MonoBehaviour
         float angle = Mathf.Atan2((mousePos.y - screenPoint.y) , (mousePos.x - screenPoint.x)) * Mathf.Rad2Deg;
 
         aim.transform.rotation = Quaternion.Euler( 0, 0,angle);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(bullet, firepos.transform.position , firepos.transform.rotation);
+        }
     }
 }

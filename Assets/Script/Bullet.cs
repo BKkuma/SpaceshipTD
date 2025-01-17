@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Rigidbody2D rg2d;
+    public float speedbullet = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,16 +15,24 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rg2d.velocity = Vector2.right;
+        rg2d.velocity = Vector2.right * speedbullet;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.collider.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
 
         if (collision.collider.tag == "Enemy")
         {
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }
