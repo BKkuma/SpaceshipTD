@@ -102,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,14 +126,14 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -146,7 +146,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -185,60 +185,18 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ship1-flame
+      name: sprites_0
       rect:
         serializedVersion: 2
         x: 32
         y: 203
         width: 11
         height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bb9c392bf5b398438b36979b8fe5862
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ship2-flame
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 216
-        width: 13
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58ee8ab1c9cc1934e8c3cebe3246fbc5
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ship1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 150
-        width: 49
-        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,14 +204,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d9bfbbc186838c42a82f6fa3173e1e6
-      internalID: 21300004
+      spriteID: 0546f61634ead674ea239b7fc492f3b3
+      internalID: -1056668791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship2
+      name: sprites_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 216
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74169c18c10f235438ee22b4b1a9d0b0
+      internalID: 1761995107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 126
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dea2e2608db044d9a3e6f16eb4a166
+      internalID: 2071604451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_3
       rect:
         serializedVersion: 2
         x: 91
@@ -267,19 +267,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e9b6a12a0da6ce478283044ab9745aa
-      internalID: 21300006
+      spriteID: c64dfb0fb66a1cd4b8f4f17baa0b5cfd
+      internalID: 919971850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship2-lines
+      name: sprites_4
       rect:
         serializedVersion: 2
         x: 102
         y: 137
-        width: 53
+        width: 21
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,14 +288,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83085eb0be2e105459b5fb496d733374
-      internalID: 21300008
+      spriteID: c6741a8a9ec0c2e4fb277b8af813b010
+      internalID: -1369521831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-small
+      name: sprites_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 137
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4253059290e40429d3d56a50e5a927
+      internalID: -780948328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_6
       rect:
         serializedVersion: 2
         x: 38
@@ -309,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e216f4258791e634781f95c671ce667a
-      internalID: 21300010
+      spriteID: ee73ebf9ec80c1146b5abc80e2575312
+      internalID: -1009674536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-med
+      name: sprites_7
       rect:
         serializedVersion: 2
         x: 51
@@ -330,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83d935976a32280438b65120e5564896
-      internalID: 21300012
+      spriteID: f2f52ae85536bde46808df53c8a47c9e
+      internalID: 915402196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-big
+      name: sprites_8
       rect:
         serializedVersion: 2
         x: 63
@@ -351,77 +372,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0472379131b15234e93bd77f3e0a0399
-      internalID: 21300014
+      spriteID: 2bc9ba52c500cf24f97910cdb623532f
+      internalID: -1727191258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-tail-small
+      name: sprites_9
       rect:
         serializedVersion: 2
         x: 90
         y: 89
         width: 5
         height: 11
-      alignment: 9
-      pivot: {x: 0.48836213, y: 0.30421934}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c64570bcb41c6d449faa523caa51603
-      internalID: 21300016
+      spriteID: 7b59e5ab5b4cbd94d95674ede74c7874
+      internalID: 83844929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-tail-med
+      name: sprites_10
       rect:
         serializedVersion: 2
         x: 103
         y: 89
         width: 7
         height: 16
-      alignment: 9
-      pivot: {x: 0.5166321, y: 0.2671795}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 413cfa4794710434fa822d7919bbb8da
-      internalID: 21300018
+      spriteID: b4a5e831598e2e648a1bfbb4bf516408
+      internalID: 1356640393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-red-tail-big
+      name: sprites_11
       rect:
         serializedVersion: 2
         x: 115
         y: 89
         width: 9
         height: 27
-      alignment: 9
-      pivot: {x: 0.5323376, y: 0.18957208}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28d18d395bd5a2d438e1da990f35a373
-      internalID: 21300020
+      spriteID: 0fcb1fde382108446b409a9140866f61
+      internalID: 1229855273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-blue-small
+      name: sprites_12
       rect:
         serializedVersion: 2
         x: 38
@@ -435,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caa29ec6154dc7c4981c00c6d6c6ac5e
-      internalID: 21300022
+      spriteID: 08c953c8f3c9b004cb3a9137a6e92a6f
+      internalID: 1781401769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-blue-med
+      name: sprites_13
       rect:
         serializedVersion: 2
         x: 51
@@ -456,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bce256670d89ee49a978ba9c6d3af0d
-      internalID: 21300024
+      spriteID: 3e17101e1b4092f48a1624409ac0a14d
+      internalID: 1145766455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-blue-big
+      name: sprites_14
       rect:
         serializedVersion: 2
         x: 63
@@ -477,83 +498,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 039ffc7f69d1e754181189f05c0aac12
-      internalID: 21300026
+      spriteID: f06797e9356e861469602411a989a1d7
+      internalID: -1506453228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball-blue-tail-small
+      name: sprites_15
       rect:
         serializedVersion: 2
         x: 90
         y: 53
         width: 5
         height: 11
-      alignment: 9
-      pivot: {x: 0.5291046, y: 0.27509376}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15f7ab68e7cf35b48844432d399bb322
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball-blue-tail-med
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 53
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.520789, y: 0.25442195}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d1679abd483dd49a73b1068b00b4e5
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball-blue-tail-big
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 53
-        width: 9
-        height: 27
-      alignment: 9
-      pivot: {x: 0.53233844, y: 0.20355436}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e402dccd6791e84db18c65ae00b8b22
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ship1-lines
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 126
-        width: 37
-        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,8 +519,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cbb2891ceaf9224d8891a206426d715
-      internalID: 21300034
+      spriteID: 3960097a6ce082545a983b533dabf0d5
+      internalID: 1954458027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 53
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137646f40116b5c42ad402825c4e81ce
+      internalID: -1599399574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 53
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6894a94d053cdb340953da1275c2c739
+      internalID: 2037900745
       vertices: []
       indices: 
       edges: []
@@ -578,24 +578,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireball-blue-big: 21300026
-      fireball-blue-med: 21300024
-      fireball-blue-small: 21300022
-      fireball-blue-tail-big: 21300032
-      fireball-blue-tail-med: 21300030
-      fireball-blue-tail-small: 21300028
-      fireball-red-big: 21300014
-      fireball-red-med: 21300012
-      fireball-red-small: 21300010
-      fireball-red-tail-big: 21300020
-      fireball-red-tail-med: 21300018
-      fireball-red-tail-small: 21300016
-      ship1: 21300004
-      ship1-flame: 21300000
-      ship1-lines: 21300034
-      ship2: 21300006
-      ship2-flame: 21300002
-      ship2-lines: 21300008
+      sprites_0: -1056668791
+      sprites_1: 1761995107
+      sprites_10: 1356640393
+      sprites_11: 1229855273
+      sprites_12: 1781401769
+      sprites_13: 1145766455
+      sprites_14: -1506453228
+      sprites_15: 1954458027
+      sprites_16: -1599399574
+      sprites_17: 2037900745
+      sprites_2: 2071604451
+      sprites_3: 919971850
+      sprites_4: -1369521831
+      sprites_5: -780948328
+      sprites_6: -1009674536
+      sprites_7: 915402196
+      sprites_8: -1727191258
+      sprites_9: 83844929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
