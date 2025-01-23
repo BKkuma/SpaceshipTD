@@ -7,8 +7,8 @@ public class ShowScore : MonoBehaviour
 
     void Start()
     {
-        // ดึงคะแนนจาก PlayerPrefs และแสดงผล
-        int finalScore = PlayerPrefs.GetInt("FinalScore", 0); // ค่าเริ่มต้นคือ 0 หากไม่มีข้อมูล
+        // ดึงคะแนนจาก ScoreManager และแสดงผล
+        int finalScore = ScoreManager.instance.score; // ดึงคะแนนจาก ScoreManager
         scoreText.text = "Your Score: " + finalScore;
     }
 }
