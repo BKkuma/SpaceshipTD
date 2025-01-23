@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI; // สำหรับการใช้งาน UI
+using UnityEngine.SceneManagement; // สำหรับการโหลดฉาก
 
 public class RealTimeTimer : MonoBehaviour
 {
@@ -28,5 +29,11 @@ public class RealTimeTimer : MonoBehaviour
         // แปลงเวลาเป็นชั่วโมง:นาที:วินาที
         timerText.text = string.Format("Time: {0:D2}:{1:D2}:{2:D2}",
             elapsedTime.Hours, elapsedTime.Minutes, elapsedTime.Seconds);
+
+        // เมื่อเกมจบ (ตัวอย่าง: เมื่อ HP เป็น 0 หรือคะแนนถึงเป้าหมาย) บันทึกเวลา
+        if (elapsedTime.TotalSeconds > 0) // ใส่เงื่อนไขที่ต้องการเมื่อจบเกม
+        {
+            PlayerPrefs.SetString("FinalTime", elapsedTime.ToString()); // บันทึกเวลา
+        }
     }
 }
