@@ -55,5 +55,14 @@ public class Enemytype2 : MonoBehaviour
 
         }
     }
-    
+    void OnDestroy()
+    {
+        SpawnEnemyType2 spawner = FindObjectOfType<SpawnEnemyType2>();
+        if (spawner != null)
+        {
+            spawner.ResetSpawn();
+        }
+    }
+
+
 }
