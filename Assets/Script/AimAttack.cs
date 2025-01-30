@@ -7,6 +7,7 @@ public class AimAttack : MonoBehaviour
     public GameObject aim;
     public GameObject bullet;
     public GameObject firepos;
+    [SerializeField] private SoundLibary soundLibary;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class AimAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(bullet, firepos.transform.position , firepos.transform.rotation);
+            AudioSource.PlayClipAtPoint(soundLibary.shootingSound, transform.position);
         }
     }
 }

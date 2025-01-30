@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
     public Rigidbody2D rg2dEnemy;
     public float enemySP = 5f;
     public int scoreValue = 10;
+    public GameObject vfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +31,15 @@ public class EnemyScript : MonoBehaviour
             // เพิ่มคะแนน
             ScoreManager.instance.AddScore(scoreValue);
 
+            if (vfx != null)
+            {
+                Instantiate(vfx, transform.position, transform.rotation);
+            }
             // ทำลาย Enemy และ Bullet
             Destroy(collision.gameObject); // ทำลาย Bullet
             Destroy(gameObject); // ทำลาย Enemy
+            
+
         }
     }
 }

@@ -175,6 +175,7 @@ MonoBehaviour:
   rg2dEnemy: {fileID: 0}
   enemySP: 4
   scoreValue: 10
+  vfx: {fileID: 4794043405585894037, guid: 37138c0c33167b04fa1fb90b7f5a794f, type: 3}
 --- !u!95 &527560868418753765
 Animator:
   serializedVersion: 5
