@@ -12,6 +12,7 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         rg2dEnemy = GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"));
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class EnemyScript : MonoBehaviour
             if (vfx != null)
             {
                 Instantiate(vfx, transform.position, transform.rotation);
+                Destroy(vfx.gameObject);
             }
             // ทำลาย Enemy และ Bullet
             Destroy(collision.gameObject); // ทำลาย Bullet

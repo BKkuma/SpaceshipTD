@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Wall
   - Bullet
+  - FxTemporaire
+  - Enemytype2
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
@@ -17,8 +20,8 @@ TagManager:
   - Player
   - BG
   - Background
-  - 
-  - 
+  - Enemy
+  - Enemy2
   - 
   - 
   - 

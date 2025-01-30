@@ -30,6 +30,16 @@ public class Bullet : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        if (collision.collider.tag == "Enemytype2")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        if (collision.collider.tag == "EnemyBullet")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
 
     private void OnBecameInvisible()
