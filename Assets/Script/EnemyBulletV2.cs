@@ -23,7 +23,7 @@ public class EnemyBulletV2 : MonoBehaviour
             if (vfx != null)
             {
                 Instantiate(vfx, transform.position, transform.rotation);
-                Destroy(vfx.gameObject);
+                Destroy(gameObject);
             }
             // ทำลาย Enemy และ Bullet
             Destroy(collision.gameObject); // ทำลาย Bullet
